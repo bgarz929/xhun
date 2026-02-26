@@ -191,13 +191,11 @@ class FastElectrumServerManager:
             {"host": "23.155.96.131", "port": 50002, "protocol": "ssl"},
             {"host": "electrum.blockstream.info", "port": 50002, "protocol": "ssl"},
             {"host": "blockstream.info", "port": 700, "protocol": "ssl"},
-            {"host": "ax101.blockeng.ch", "port": 60002, "protocol": "ssl"},
             {"host": "bitcoin.grey.pw", "port": 50002, "protocol": "ssl"},
             {"host": "116-255-5-183.ip4.superloop.au", "port": 50002, "protocol": "ssl"},
             {"host": "btc.ocf.sh", "port": 50002, "protocol": "ssl"},
             {"host": "165.22.98.208", "port": 50002, "protocol": "ssl"},
             {"host": "34.128.68.204", "port": 50002, "protocol": "ssl"},
-            {"host": "34.50.93.134", "port": 50002, "protocol": "ssl"},
         ]
 
     async def _perform_test_requests(self, host, port, ssl_ctx):
@@ -740,6 +738,7 @@ else:
     print("🎯 Full address type support: P2PKH, P2SH, Bech32, Taproot")
 
     print("🔧 Enhanced Taproot support implemented")
+
 
 
 
