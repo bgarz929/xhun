@@ -556,7 +556,7 @@ def load_btc_addresses(filename):
         print(f"❌ Error loading addresses: {e}")
         return []
 
-btc_addresses = load_btc_addresses('b1.txt')
+btc_addresses = load_btc_addresses('1.txt')
 
 async def process_addresses_fast(addresses, balance_checker):
     """High-speed BTC address processing WITHOUT CACHE"""
@@ -660,7 +660,7 @@ async def main_fast():
 
     print("\n🔧 Testing with various address types including Taproot...")
     test_addresses = [
-        "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+        "-",
     ]
 
     # Inisialisasi tester
@@ -740,3 +740,4 @@ else:
     print("🎯 Full address type support: P2PKH, P2SH, Bech32, Taproot")
 
     print("🔧 Enhanced Taproot support implemented")
+
